@@ -1,0 +1,17 @@
+name: Sample github workflow
+on:
+  push:
+    branches:
+      - dev
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5.0.0
+      - name: print the files which are checkout
+        run: ls
+      
+        
+  
