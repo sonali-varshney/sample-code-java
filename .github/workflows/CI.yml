@@ -18,8 +18,7 @@ jobs:
           java-version: 17
           distribution: microsoft
       - name: Building the code
-        run: |
-          mvn --batch-mode --update-snapshots verify   # it will generate target folder and jar
+        run: mvn --batch-mode --update-snapshots verify
       - name: Upload the artifact
         uses: actions/upload-artifact@v4.6.2
         with:
