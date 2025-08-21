@@ -18,8 +18,8 @@ jobs:
           java-version: 17
       - name: Building the code
         run: |
-        mvn --batch-mode --update-snapshots verify
-        ls
+          mvn --batch-mode --update-snapshots verify
+          ls
         
         
       
