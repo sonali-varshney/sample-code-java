@@ -19,7 +19,7 @@ jobs:
           distribution: microsoft
       - name: Building the code
         run: |
-          mvn --batch-mode --update-snapshots verify
+          mvn --batch-mode --update-snapshots verify   # it will generate target folder and jar
           ls
         
         
